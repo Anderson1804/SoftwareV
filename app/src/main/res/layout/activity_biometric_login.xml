@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="32dp"
+    tools:context=".ui.BiometricLoginActivity">
+
+    <ImageView
+        android:id="@+id/fingerprintIcon"
+        android:layout_width="146dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Icono de huella digital"
+        android:src="@drawable/rlcm_telecom" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de sesión biométrico"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/textSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Usa tu huella o rostro para acceder rápidamente"
+        android:textColor="@color/darker_gray"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usar huella"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="10dp" />
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white" />
+
+</LinearLayout>
